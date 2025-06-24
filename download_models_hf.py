@@ -68,6 +68,7 @@ if __name__ == '__main__':
     json_mods = {
         'models-dir': model_dir,
         'layoutreader-model-dir': layoutreader_model_dir,
+        'device-mode': 'cuda',
     }
 
     download_and_modify_json(json_url, config_file, json_mods)
