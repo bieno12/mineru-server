@@ -26,8 +26,7 @@ jobs:
         with:
           images: ghcr.io/${{ github.repository }}
 
-      # 3. Set up Buildx + (optional) multi-arch emulation
-      - uses: docker/setup-qemu-action@v3
+      # 3. Set up Buildx
       - uses: docker/setup-buildx-action@v3
 
       # 4. Log in to GitHub Container Registry
