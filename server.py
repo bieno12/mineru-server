@@ -179,7 +179,7 @@ class ImageAPI(ls.LitAPI):
         
         for item in content_list:
             if item.get('type') in ['image', 'table']:
-                image_path = item.pop('img_path')
+                image_path = item['img_path']
                 if image_path.startswith('/'):
                     image_path = image_path[1:]
                 
